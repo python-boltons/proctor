@@ -1,4 +1,7 @@
-"""process doctor (PROCTOR)... Utilities related to process / thread management."""
+"""proctor package
+
+process doctor (PROCTOR)... Utilities related to process / thread management.
+"""
 
 import logging as _logging
 

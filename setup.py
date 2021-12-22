@@ -17,7 +17,10 @@ from setuptools import find_namespace_packages, setup
 ###############################################################################
 # Configuration variables that are likely to need changing at some point.
 ###############################################################################
-DESCRIPTION = "process doctor (PROCTOR)... Utilities related to process / thread management."
+DESCRIPTION = (
+    "process doctor (PROCTOR)... Utilities related to process / thread"
+    " management."
+)
 SUPPORTED_PYTHON_VERSIONS = [
     (3, 8),
     (3, 9),
