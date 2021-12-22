@@ -1,0 +1,23 @@
+{
+  "template": "https://github.com/python-boltons/cc-python",
+  "commit": "d93c9f24d9b2ed7b05e18da95ffc3086e540e721",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "author": "Bryan M Bugyi",
+      "email": "bryanbugyi34@gmail.com",
+      "github_username": "bbugyi200",
+      "git_org_name": "python-boltons",
+      "git_repo_name": "proctor",
+      "package_name": "proctor",
+      "pypi_package_name": "bolton-proctor",
+      "read_the_docs_domain": "bolton-proctor",
+      "package_description": "process doctor (PROCTOR)... Utilities related to process / thread management.",
+      "package_type": "library",
+      "_template": "https://github.com/python-boltons/cc-python",
+      "package_path": "proctor",
+      "package_module": "proctor"
+    }
+  },
+  "directory": null
+}
