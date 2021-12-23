@@ -5,10 +5,10 @@ process doctor (PROCTOR)... Utilities related to process / thread management.
 
 import logging as _logging
 
-from ._core import dummy
+from ._core import Process, command_exists, safe_popen, unsafe_popen
 
 
-__all__ = ["dummy"]
+__all__ = ["Process", "command_exists", "safe_popen", "unsafe_popen"]
 
 __author__ = "Bryan M Bugyi"
 __email__ = "bryanbugyi34@gmail.com"

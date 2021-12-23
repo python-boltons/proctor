@@ -28,7 +28,7 @@ define runtests
 		-vv \
 		--cov=src/proctor \
 		--cov-config=setup.cfg \
-		--cov-fail-under=80 \
+		--cov-fail-under=45 \
 		--cov-report=xml:coverage.xml \
 		--cov-report=term-missing \
 		--cov-branch \
