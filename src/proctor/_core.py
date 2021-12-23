@@ -63,7 +63,7 @@ class Process:
         """Resturns a 2-tuple of the processes' STDOUT and STDERR."""
         yield from [self.out, self.err]
 
-    def to_error(self, *, up: int = 0) -> Err:
+    def to_error(self, *, up: int = 0) -> Err[Process, ErisError]:
         """Converts a Process object into an Err(...) object.."""
         maybe_out = ""
         if self.out:
@@ -92,7 +92,7 @@ def safe_popen(
     up: int = 0,
     timeout: float = _DEFAULT_TIMEOUT,
     **kwargs: Any,
-) -> Result[Process]:
+) -> Result[Process, ErisError]:
     """Wrapper for subprocess.Popen(...).
 
     Returns:
