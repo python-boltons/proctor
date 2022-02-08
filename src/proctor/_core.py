@@ -41,7 +41,7 @@ class Process:
         self,
         popen: Popen,
         *,
-        timeout: float = _DEFAULT_TIMEOUT,
+        timeout: float | None = _DEFAULT_TIMEOUT,
     ) -> None:
         self.popen = popen
 
@@ -90,7 +90,7 @@ def safe_popen(
     cmd_parts: Iterable[str],
     *,
     up: int = 0,
-    timeout: float = _DEFAULT_TIMEOUT,
+    timeout: float | None = _DEFAULT_TIMEOUT,
     **kwargs: Any,
 ) -> Result[Process, ErisError]:
     """Wrapper for subprocess.Popen(...).
@@ -110,7 +110,7 @@ def safe_popen(
 def unsafe_popen(
     cmd_parts: Iterable[str],
     *,
-    timeout: float = _DEFAULT_TIMEOUT,
+    timeout: float | None = _DEFAULT_TIMEOUT,
     **kwargs: Any,
 ) -> Process:
     """Wrapper for subprocess.Popen(...)
