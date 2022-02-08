@@ -13,13 +13,13 @@ _version badges:_
 
 [![Project Version](https://img.shields.io/pypi/v/bolton-proctor)](https://pypi.org/project/bolton-proctor/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/bolton-proctor)](https://pypi.org/project/bolton-proctor/)
-[![Cookiecutter: cc-python](https://img.shields.io/static/v1?label=cc-python&message=2021.12.22&color=d4aa00&logo=cookiecutter&logoColor=d4aa00)](https://github.com/python-boltons/cc-python)
+[![Cookiecutter: cc-python](https://img.shields.io/static/v1?label=cc-python&message=2022.01.04&color=d4aa00&logo=cookiecutter&logoColor=d4aa00)](https://github.com/python-boltons/cc-python)
 [![Docker: pythonboltons/main](https://img.shields.io/static/v1?label=pythonboltons%20%2F%20main&message=2021.12.22&color=8ec4ad&logo=docker&logoColor=8ec4ad)](https://github.com/python-boltons/docker-python)
 
 
 ## Installation 🗹
 
-To install `bolton-proctor` using [pip][9], run the following
+To install `proctor` using [pip][9], run the following
 commands in your terminal:
 
 ``` shell
@@ -28,6 +28,17 @@ python3 -m pip install --user bolton-proctor  # install proctor
 
 If you don't have pip installed, this [Python installation guide][10] can guide
 you through the process.
+
+<!-- [[[[[kooky.cog
+from pathlib import Path
+
+lines = Path("./docs/design/design.md").read_text().split("\n")
+if any(L.strip() for L in lines):
+    fixed_lines = [L.replace("(.", "(./docs/design") if L.startswith("![") else L for L in lines]
+    print("## Design Diagrams\n")
+    print("\n".join(fixed_lines))
+]]]]] -->
+<!-- [[[[[end]]]]] -->
 
 
 ## Useful Links 🔗
