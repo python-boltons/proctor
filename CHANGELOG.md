@@ -9,9 +9,16 @@ The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning]: https://semver.org/
 
 
-## [Unreleased](https://github.com/python-boltons/proctor/compare/0.2.0...HEAD)
+## [Unreleased](https://github.com/python-boltons/proctor/compare/0.2.1...HEAD)
 
 No notable changes have been made.
+
+
+## [0.2.1](https://github.com/python-boltons/proctor/compare/0.2.0...0.2.1) - 2022-02-08
+
+### Fixed
+
+* Fix type of 'timeout' kwarg.
 
 
 ## [0.2.0](https://github.com/python-boltons/proctor/compare/0.1.0...0.2.0) - 2021-12-23
