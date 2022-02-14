@@ -9,9 +9,16 @@ The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning]: https://semver.org/
 
 
-## [Unreleased](https://github.com/python-boltons/proctor/compare/0.2.1...HEAD)
+## [Unreleased](https://github.com/python-boltons/proctor/compare/0.2.2...HEAD)
 
 No notable changes have been made.
+
+
+## [0.2.2](https://github.com/python-boltons/proctor/compare/0.2.1...0.2.2) - 2022-02-14
+
+### Fixed
+
+* Fix log message crash.
 
 
 ## [0.2.1](https://github.com/python-boltons/proctor/compare/0.2.0...0.2.1) - 2022-02-08
